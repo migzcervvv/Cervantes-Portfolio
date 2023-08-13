@@ -1,0 +1,63 @@
+/* This will hide all sections initially */
+section {
+    display: none;
+}
+
+/* This will show only the about section initially */
+section#about {
+    display: block;
+}
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add basic styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.autotyping {
+    font-family: 'Playfair Display', serif;
+    color: #FFF;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.autotyping > span {
+    color: #FFDC00;
+    font-size: 1.2em;
+    font-weight: 700;
+}

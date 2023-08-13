@@ -1,0 +1,59 @@
+Your HTML and CSS code looks structurally fine for the most part. If the autotyping feature isn't working, it might be a problem outside the context of what's provided. However, I'll try to ensure everything is in order
+
+1. Typed.js Library Confirm that the CDN link you are using for Typed.js is valid and the library is being loaded. I'll keep it as it is for now, assuming the link is correct.
+
+2. Initialization of Typed.js Ensure that the initialization of Typed.js only happens after the DOM is fully loaded. You can wrap it inside the `window.onload` function to ensure this.
+
+3. CSS Issues Ensure that the styling for `.autotyping` and the span inside doesn't obscure or hide the text. I see no problem from the CSS you provided, but double-checking is always good.
+
+Here's a small modification to your HTML
+
+```html
+!DOCTYPE html
+html lang=en
+
+head
+    !-- (rest of the head elements) --
+    script src=httpscdn.jsdelivr.netnpmtyped.jsscript
+head
+
+body
+    !-- (rest of the body elements) --
+
+    script
+        window.onload = function() {
+            let sections = document.querySelectorAll(section);
+            let navLinks = document.querySelectorAll(nav ul li a);
+
+            navLinks.forEach((link) = {
+                link.addEventListener(click, (e) = {
+                    e.preventDefault();
+
+                     Hide all sections
+                    sections.forEach((section) = {
+                        section.style.display = none;
+                    });
+
+                     Show the clicked section
+                    document.querySelector(link.getAttribute(href)).style.display = block;
+                });
+            });
+
+             Initialize Typed.js
+            var typed = new Typed(.typing_text, {
+                strings [YouTuber, Developer, Blogger, Designer, Freelancer],
+                typeSpeed 100,
+                backSpeed 60,
+                loop true,
+                cursorChar '️',
+            });
+        }
+    script
+body
+
+html
+```
+
+I've moved the Typed.js initialization inside the `window.onload` function to ensure the DOM is loaded before the script runs.
+
+Now, if you load your HTML and it still isn't working, check your browser's console for any error messages. This might provide more information about what's going wrong.
