@@ -14,25 +14,39 @@ header {
     padding: 1rem;
 }
 
+/* Styles for unordered list of the nav */
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style-type: none; /* Removes the bullets */
 }
-nav li {
-    margin-right: 1rem;
+
+/* Styles for list items */
+nav ul li {
+    display: inline; /* Make each list item display inline */
+    margin-right: 5px; /* Optional: Space between each list item */
 }
-nav a {
-    color: white;
-    text-decoration: none;
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #007BFF; /* Blue color */
+    color: #FFF; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    background-color: #b3009b; /* "color" on hover */
 }
 
 /* Section styles */
 section {
-    display: none;  /* Hide all sections initially */
+    display: none; 
     padding: 2rem;
 }
 
-section#about {
+#about {
     display: block; /* Show only the about section initially */
 }
 
