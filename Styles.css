@@ -1,23 +1,13 @@
-/* This will hide all sections initially */
-section {
-    display: none;
-}
-
-/* This will show only the about section initially */
-section#about {
-    display: block;
-}
-
+/* Resets and base styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
-
-/* Add basic styles */
 body {
     font-family: Arial, sans-serif;
 }
 
+/* Header styles */
 header {
     background-color: #333;
     color: white;
@@ -28,36 +18,56 @@ nav ul {
     list-style: none;
     display: flex;
 }
-
 nav li {
     margin-right: 1rem;
 }
-
 nav a {
     color: white;
     text-decoration: none;
 }
 
+/* Section styles */
 section {
+    display: none;  /* Hide all sections initially */
     padding: 2rem;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+section#about {
+    display: block; /* Show only the about section initially */
 }
 
+#about {
+    background-color: #f7f7f7;  /* Light gray background */
+    border: 1px solid #e0e0e0;  /* Light gray border */
+    padding: 20px;
+}
+#about h2 {
+    font-size: 24px;
+    color: #050505;
+    margin-bottom: 15px;
+}
+
+/* Autotyping and typing text styles */
 .autotyping {
     font-family: 'Playfair Display', serif;
     color: #FFF;
     font-size: 2.5em;
     font-weight: 800;
+    margin: 10px 0;
 }
 
-.autotyping > span {
+.autotyping > span,
+.typing_text {
+    font-style: italic;  /* Making the animated text italic */
     color: #FFDC00;
     font-size: 1.2em;
     font-weight: 700;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
