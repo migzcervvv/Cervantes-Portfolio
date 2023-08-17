@@ -43,7 +43,7 @@ body {
     left:0;
       -webkit-backface-visibility: hidden;
       -webkit-transform: translateZ(0); backface-visibility: hidden;
-    scale(1.0, 1.0);
+    scale: (1.0, 1.0);
       transform: translateZ(0);
     background:#1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) 50% 0 no-repeat;
     background-size:100%;
@@ -71,9 +71,9 @@ body {
   }
 
 .meta{
-    font-size:0.7em
-    font-style:italic;
-  }
+    font-size: 0.7em;
+    font-style: italic;
+}
 
 /* Styles for unordered list of the nav */
 nav ul {
