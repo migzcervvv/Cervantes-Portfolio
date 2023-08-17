@@ -3,6 +3,7 @@ body, h1, h2, h3, ul, li {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -42,23 +43,55 @@ nav ul li a:hover {
 
 /* Section styles */
 section {
-    display: none; 
+    background-color: #b7ecf0;
+    background: radial-gradient(#648880, #293f50);
+    font-family: Arial, sans-serif;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
     padding: 2rem;
+    display: none; /* All sections are hidden by default */
+}
+
+.fade-in {
+    opacity: 1;
 }
 
 #about {
-    display: block; /* Show only the about section initially */
-}
-
-#about {
+    display: block; /* Only the "About Me" section is displayed by default */
+    opacity: 1;
     background-color: #f7f7f7;  /* Light gray background */
     border: 1px solid #e0e0e0;  /* Light gray border */
     padding: 20px;
 }
+
 #about h2 {
     font-size: 24px;
     color: #050505;
     margin-bottom: 15px;
+}
+
+/* Container and Image styles */
+.container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 40vh; /* Set the container's height to the viewport height */
+}
+
+.image-border {
+    width: 200px; /* Initial width */
+    height: 200px; /* Initial height */
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    transition: transform 0.3s; /* Add transition for smooth animation */
+}
+
+.image-border:hover {
+    transform: scale(1.2); /* Enlarge the image on hover */
+}
+
+.enlarge-on-hover {
+    margin: 50px 100px; /* Add margin for spacing */
 }
 
 /* Autotyping and typing text styles */
@@ -68,14 +101,6 @@ section {
     font-size: 2.5em;
     font-weight: 800;
     margin: 10px 0;
-}
-
-.autotyping > span,
-.typing_text {
-    font-style: italic;  /* Making the animated text italic */
-    color: #FFDC00;
-    font-size: 1.2em;
-    font-weight: 700;
 }
 
 /* Footer styles */
