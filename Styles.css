@@ -10,8 +10,6 @@ body, h1, h2, h3, ul, li {
     padding: 0;
 }
 
-
-
 body{
     background: var(--background-color);
     font-family: var(--font);
@@ -116,8 +114,8 @@ nav ul li a:hover {
 
 /* Section styles */
 section {
-    background-color: #b7ecf0;
-    background: radial-gradient(#648880, #293f50);
+    background-color: #1fe8f7;
+    background: radial-gradient(#ec7dd2, #179fee);
     font-family: Arial, sans-serif;
     opacity: 0; 
     transition: opacity 1s ease-in-out;
