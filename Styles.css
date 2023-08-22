@@ -122,7 +122,7 @@ section {
     padding: 2rem;
     display: none; /* All sections are hidden by default */
 }
-
+    
 .fade-in {
     opacity: 1;
 }
@@ -135,10 +135,26 @@ section {
     padding: 20px;
 }
 
+#about p {
+    font-size: 18px;
+    color: #050505;
+    padding-right: 25%;
+    padding-left: 25%;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
 #about h2 {
     font-size: 24px;
     color: #050505;
     margin-bottom: 15px;
+    text-align: center;
+}
+
+#about h3 {
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif; 
 }
 
 /* Container and Image styles */
@@ -163,12 +179,6 @@ section {
 
 .enlarge-on-hover {
     margin: 50px 100px; /* Add margin for spacing */
-}
-
-h3 {
-    font-size: 48px;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif; 
 }
   
 .timeline-section {
