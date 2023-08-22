@@ -5,46 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles.css">
     <title>Miggz Cervantes - Portfolio</title>
-        <script>
-            window.onload = function() {
-                // Navigation code
-                let sections = document.querySelectorAll("section");
-                let navLinks = document.querySelectorAll("nav ul li a");
-                
-                navLinks.forEach((link) => {
-                    link.addEventListener("click", (e) => {
-                        e.preventDefault();
-
-                        let targetSectionId = link.getAttribute("href").substring(1);
-                        
-                        if (document.getElementById(targetSectionId).classList.contains("fade-in")) {
-                            // If the target section is already visible, just return
-                            return;
-                        }
-
-                        // Hide all sections immediately
-                        sections.forEach((section) => {
-                            section.classList.remove("fade-in");
-                            section.style.display = 'none'; // hide them immediately
-                        });
-
-                        // Show the target section with a fade-in effect
-                        let targetSection = document.getElementById(targetSectionId);
-                        targetSection.style.display = 'block'; // show it immediately
-                        setTimeout(() => {
-                            targetSection.classList.add("fade-in"); // add the fade-in effect
-                        }, 10); // a very short delay to ensure the display change takes effect first
-                    });
-                });
-            }
-            
-        </script>
-
 </head>
 <body>
 <div class="header" id="myHeader">
         <div class="info">
-        <h1>Miggz Cervantes - Aspiring Computer Programmer</h1>
+        <h1>Hello, I am <span style="color: rgb(189, 13, 13);">Miggz Cervantes</span> an Aspiring Computer Programmer</h1>
         <div class="navigation">
         <nav>
             <ul>    
@@ -61,7 +26,7 @@
         </div>
       </div>
 
-    <section id="about">
+    <section id="about" class="timeline-section">
         <div class="container">
             <img src="Images/Miggz.jpg" alt="Image of Miggz" class="image-border enlarge-on-hover">
         </div>          
@@ -72,9 +37,58 @@
             I live in the city of Las Pinas here in Philippines. I was born in April 2001 and I am currently 22 years old.
         </p>
         <p></p>
-        <h3>Previous Job Employments</h3>
-        <p>I have worked as a virtual assistant and freelancer starting from the year 2020.</p>
-    
+        <h3>Educational Background and Previous Job Employments</h3>
+            <uL>
+                <li>
+                    <div>
+                        <!--Use the time tag-->
+                      <time>2012-2019 AUGUSTINIAN ABBEY SCHOOL</time>JUNIOR AND SENIOR HIGH-SCHOOL
+                      <img src="Images/AAS.png" alt="Augustinian Abbey School Logo" class="image-border enlarge-on-hover">
+                    </div>
+                </li>
+                  
+                <li>
+                  <div>
+                    <time>2019-2020 LYCEUM OF ALABANG INC.</time> BACHELOR OF SCIENCE IN COMPUTER ENGINEERING
+                    <img src="Images/LOA.png" alt="Lyceum of ALABANG Logo" class="image-border enlarge-on-hover">
+                  </div> 
+                </li>
+          
+                <li>
+                    <div>
+                      <time>2020 - Present PAMANTASAN NG LUNGSOD NG MAYNILA</time> BACHELOR OF SCIENCE IN COMPUTER ENGINEERING
+                      <img src="Images/PLM.png" alt="PAMANTASAN NG LUNGSOD NG MAYNILA Logo" class="image-border enlarge-on-hover">
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                      <time>May 2020 - November 2020</time> This was the time I started working as a Freelancer.
+                      My first job was to convert YouTube videos to Blogs
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                      <time>September 2021 - December 2022</time>I worked for The Community Travel which is now known 
+                      as Playces. I worked as a Virtual Assistant and helped with managing the websites, sending emails using CRM, managing social media accounts and more.
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                      <time>November 2022 - March 2023</time> I worked for XHIBIT Model Management as a Virtual Assistant and 
+                      Social Media Manager. It was also the first time I created a whole working website with WordPress and 
+                      Elementor.
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                      <time>December 2022 -April 2023</time> I worked for D.E.F.C. & Xtra Time Training Studio as an Executive Assistant
+                      I mostly handled Bookings with customers and other VA related tasks. 
+                    </div>
+                </li>
     </section>    
 
     <section id="reel">
@@ -86,7 +100,40 @@
     <section id="ig-story">
         <h2>IG Story Sample</h2>
         <p>Story</p>
-        <!-- Add your IG story sample here -->
+        <div class="timeline">
+            <div class="outer">
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">Title 1</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">Title 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">Title 3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">Title 4</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">Title 5</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+              </div>
+            </div>
+          </div>          
     </section>
 
     <section id="programming">
@@ -94,6 +141,7 @@
         <p>Programs</p>
         <!-- Add your programming projects here -->
     </section>
+    <script src="scripts.js"></script>
 </body>
 
     <footer>
@@ -102,6 +150,10 @@
             <p>Email: migzcerv007@gmail.com</p>
             <p>WhatsApp: (+63) 9153405652</p>
             <p>Telegram: @migzcerv</p>
+            <p>Click this 
+                <a href="https://docs.google.com/document/d/128RXikUSq2CFDmllmJ__5MU781b5EKPy7SU4ovcfZK8/edit?usp=sharing"><span style="color: rgb(87, 212, 52);">link</span></a> 
+                to see my Resume!
+            </p>            
         </div>
     </footer> 
 </html>
