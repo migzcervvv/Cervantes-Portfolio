@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
 
 :root {
     --primary-color: #fff; /* try #212121 also for dark mode */
     --background-color: #212121;
-    --font: sans-serif;
+    --font-family: 'Poppins', sans-serif;
   }
+
 body, h1, h2, h3, ul, li {
     margin: 0;
     padding: 0;
@@ -14,7 +15,6 @@ body{
     background: var(--background-color);
     font-family: var(--font);
     justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Header styles */
@@ -114,8 +114,8 @@ nav ul li a:hover {
 
 /* Section styles */
 section {
-    background-color: #1fe8f7;
-    background: radial-gradient(#ec7dd2, #179fee);
+    background: url(https://images.unsplash.com/photo-1510172951991-856a654063f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80) no-repeat center center;
+    background-size: cover;
     font-family: Arial, sans-serif;
     opacity: 0; 
     transition: opacity 1s ease-in-out;
@@ -128,9 +128,9 @@ section {
 }
 
 #about {
+    font-family: 'Poppins', sans-serif; 
     display: block; /* Only the "About Me" section is displayed by default */
     opacity: 1;
-    background-color: #f7f7f7;  /* Light gray background */
     border: 1px solid #e0e0e0;  /* Light gray border */
     padding: 20px;
 }
@@ -393,8 +393,23 @@ time {
 
 /* Footer styles */
 footer {
-    background-color: #333;
+    background: #1B2030;
     color: white;
     text-align: center;
     padding: 1rem;
 }
+
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
