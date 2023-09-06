@@ -13,9 +13,9 @@ body, h1, h2, h3, ul, li {
 
 body{
     background: var(--background-color);
-    font-family: var(--font);
+    font-family: var(--font-family);
     justify-content: center;
-}
+} 
 
 /* Header styles */
 .header{
@@ -28,7 +28,7 @@ body{
     align-content: flex-start;
     height:50vw;
     min-height:400px;
-    max-height:500px;
+    max-height:650px;
     min-width:300px;
     color:#eee;
   }
