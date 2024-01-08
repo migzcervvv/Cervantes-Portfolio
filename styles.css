@@ -313,10 +313,7 @@ body {
     .offcanvas-body {
         align-self: flex-start;
     }
-
-    .navbar-toggler {
-        background-color: #00abf0;
-    }
+    
     .goals{
         margin-bottom: 5%;
     }
@@ -325,8 +322,5 @@ body {
     }
     .about p{
         text-align: justify;
-    }
-    .navbar-toggler {
-        display: none;
-    }
+    }   
 }
